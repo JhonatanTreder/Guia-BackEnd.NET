@@ -3,7 +3,7 @@
 Repositório que serve como um guia de consulta para os termos no desenvolvimento Back-End no .NET. Facilitando assim a vida de pessoas que desejam consultar um conceito sobre o desenvolvimento back-end de forma rápida.
 
 ## Visão Geral
-Antes de entender como o Back-End funciona, é importante se atentar aos conceitos básicos que o compõem. Da mesma forma que um prédio precisa de fundamentos sólidos antes de ser construído, também precisamos **aprender** e **entender** como funcionam esses conceitos básicos para que não venhamos se perder lá na frente. Essa primeira parte se diz respeito aos conceitos básicos que você vai encontrar ao decorrer da sua trajetória como desenvolvedor Back-End, conceitos esses que se irão se estender por toda a sua carreira. <br>
+Antes de entender como o Back-End funciona, é importante se atentar aos conceitos básicos que o compõem. Da mesma forma que um prédio precisa de fundamentos sólidos antes de ser construído, também precisamos **aprender** e **entender** como funcionam esses conceitos básicos para que não venhamos se perder lá na frente. A primeira parte se diz respeito aos conceitos básicos que você vai encontrar ao decorrer da sua trajetória como desenvolvedor Back-End (conceitos esses que se irão se estender por toda a sua carreira) e as demais partes necessitam da primeira, então é de grande importância que você **NÃO** pule essa parte caso não tenha um conhecimento prévio antes. <br>
 
 ## Parte 1 - Conceitos Básicos
 Aqui iremos abordar assuntos básicos que você com toda certeza encontrará em sua trajetória, assuntos como **_Requests/Responses_**, Comunicação com **_JSON e XML_**, Como funciona a comunicação entre **_Cliente e Servidor_** serão abordados aqui. <br>
