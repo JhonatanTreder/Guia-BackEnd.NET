@@ -24,7 +24,7 @@ Aqui trataremos conceitos de como os protocolos e comunicações se complementam
 [Roteamento e Endpoints](docs/Protocols/Routes-EndPoints.md) <br>
 
 ## Parte 3 - Conceitos de Arquitetura
-Essa parte abordará conceitos gerais sobre arquiteturas, bem como **_Padrões de Projetos_**, **_Injeção de Dependência_**, **Tipos de Camadas em um Sistema**, etc. Aqui estamos abordando o assunto de Back-End em um nível mais arquitetural das coisas, isto é, estamos falando sobre como um sistema deve se comportar como um todo por meio de boas práticas que vão desde um tipo de arquitetura até as nuances de sistemas.<br>
+Essa parte abordará conceitos gerais sobre arquiteturas, bem como **_Padrões de Projetos_**, **_Injeção de Dependência_**, **_Tipos de Camadas em um Sistema_**, etc. Aqui estamos abordando o assunto de Back-End em um nível mais arquitetural das coisas, isto é, estamos falando sobre como um sistema deve se comportar como um todo por meio de boas práticas que vão desde um tipo de arquitetura até as nuances de sistemas.<br>
 
 [Padrão MVC - Model View Controller](docs/ArchitectureConcepts/MVC-Architecture.md) <br>
 [Camadas de um Sistema](docs/ArchitectureConcepts/SystemLayers.md) <br>
@@ -34,6 +34,8 @@ Essa parte abordará conceitos gerais sobre arquiteturas, bem como **_Padrões d
 [Padrões de Projetos mais Utilizados no Back-End](docs/ArchitectureConcepts/ProjectPatterns.md) <br>
 
 ## Parte 4 - Fundamentos Específicos do .NET
+Essa parte se diz respeito aos conceitos básicos que integram o .NET como um todo. Aqui estaremos falando mais sobre o nível técnico de como o Back-End se comporta de forma geral atrás dos panos e iremos realizar recomendações de cada conceito observado aqui. <br>
+
 [.NET Runtime e .NET SDK](docs/DotNetFundamentals/RuntimeAndSDKs.md) <br>
 [ASP.NET Core](docs/DotNetFundamentals/ASPNetCore.md) <br>
 [Middlewares](docs/DotnetFundamentals/Middlewares.md) <br>
