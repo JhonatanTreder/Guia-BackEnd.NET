@@ -10,6 +10,7 @@ Aqui iremos abordar assuntos básicos que você com toda certeza encontrará em 
 
 [Servidores e Clientes](docs/Basics/Client-Server.md) <br>
 [HTTP e HTTPS](docs/Basics/HTTP-HTTPS.md) <br>
+[APIs](docs/Basics/APIs.md) <br>
 [Padrão RESTful vs. Padrão SOAP](docs/Basics/RESTful-SOAP.md) <br>
 [JSON e XML](docs/Basics/JSON-XML.md) <br>
 [Banco de Dados](docs/Basics/DataBase.md) <br>
