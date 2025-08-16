@@ -27,9 +27,9 @@ Nesse exemplo, nós enviamos um pedido (no caso da _requisição_ foi "Notebook"
 
 # Resumo
 Cliente é aquele que faz uma _requisição_ para um servidor através do envio de formulários,
-pesquisas ou até mesmo clicks em algum botão em determinada plataforma (seja essa plataforma um site um algum aplicativo). 
+pesquisas ou até mesmo clicks em algum botão em determinada plataforma (seja essa plataforma um site ou algum aplicativo). 
 Servidor é aquele que envia dados para o cliente com base no que ele pediu através de _respostas_. <br> <br>
 
-**OBS:** A requisição que um cliente faz para um servidor pode ser algo digitado, pesquisado e coisa semelhante.
+**OBS:** A requisição que um cliente faz para um servidor pode ser algo digitado, pesquisado e/ou algo semelhante.
 Por outro lado, a resposta que o servidor retorna para o cliente pode ser detalhes sobre determinado produto,
 pode ser algum tipo de dado ou até mesmo um redirecionamento para outra página.
