@@ -48,7 +48,7 @@ o **Front-End**, por sua vez, poderia permitir o cadastro do usuário, avisar qu
 ### Métodos HTTPs
 
 **Explicação:** São aqueles que explicam para o servidor qual é o tipo da _requisição_ que está sendo enviada pelo cliente. Existem vários métodos HTTPs,
-porém os mais utilizados são eles: **`HTTP POST`**, **`HTTP GET`**, **`HTTP UPDATE`**, **`HTTP PATCH`** e **`HTTP DELETE`** <br>
+porém os mais utilizados são eles: **`HTTP POST`**, **`HTTP GET`**, **`HTTP PUT`**, **`HTTP PATCH`** e **`HTTP DELETE`** <br>
 
 **Caso de Usos** <br>
 
@@ -58,7 +58,7 @@ quando uma pessoa publica um comentário, quando alguém faz um pedido de algum 
 **`HTTP GET:`** Utilizado para **buscar** por algum recurso específico em um servidor. Esse método é amplamente utilizado para buscar detalhes sobre determinado produto,
 buscas por itens em algum catálogo, pesquisar sobre certa coisa, quando um usuário clica no perfil de um outro usuário, etc. <br>
 
-**`HTTP UPDATE:`** Utilizado para **atualizar** alguma coisa no lado do servidor. Esse método é utilizado quando o usuário atualiza informações do seu perfil,
+**`HTTP PUT:`** Utilizado para **atualizar** alguma coisa no lado do servidor. Esse método é utilizado quando o usuário atualiza informações do seu perfil,
 atualiza uma mensagem em uma rede social, etc.
 
 **`HTTP PATCH:`** Também é utilizado para **atualizar** algum recurso no servidor, porém ele é utilizado para realizar _atualizações parciais_ de um determinado recurso,
@@ -166,7 +166,7 @@ Esse processo acontece principalmente através dos protocolos **HTTP** e **HTTPS
 Para que essa comunicação faça sentido, utilizamos os **métodos HTTPs**, que indicam ao servidor a intenção da requisição:  
 - **POST:** Criar recursos (ex: criar conta, enviar formulário).  
 - **GET:** Buscar informações (ex: consultar produtos, visualizar perfis).  
-- **UPDATE/PATCH:** Atualizar recursos (ex: editar perfil, alterar dados específicos).  
+- **PUT/PATCH:** Atualizar recursos (ex: editar perfil, alterar dados específicos).  
 - **DELETE:** Excluir recursos (ex: deletar conta, apagar comentário).  
 
 Após o servidor processar a requisição, ele responde ao cliente com um **Status Code**,
