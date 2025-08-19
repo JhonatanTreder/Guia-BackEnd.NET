@@ -77,7 +77,7 @@ Content-Type: application/json
 2) Mensagem de **_Resposta com Status Code_** devolvida para o cliente
  
 ```md
-HTTP/1.1 Created
+HTTP/1.1 201 Created
 Server: Apache/2.4.1 (Unix)
 Date: Mon, 18 Dec 2024 10:25:30 GMT
 Content-Length: 88
