@@ -5,7 +5,7 @@ Agora iremos entrar no tópico de **APIs**, que são nada mais nada menos que a 
 
 # Introdução
 **`Sigla A.P.I:`** A sigla **"API"** vem de _"**A**pplication **P**rogramming **I**nterface"_,
-que traduzindo para o português seria algo como _"**I**nterface de **P**rogramação **A**plicada"_. <br>
+que traduzindo para o português seria algo como _"**I**nterface de **P**rogramação de **A**plicações"_. <br>
 
 **`Explicação do Termo:`** O termo **API** se refere a um mecanismo utilizado entre dois ou mais sistemas para a comunicação entre si. Pode imaginar que a **API** é uma "ponte"
 entre dois tipos de sistemas. Por exemplo: imagina que você esteja em um restaurante e em determinado momento você pede ao garçom um tipo de comida específica, o garçom por sua vez,
