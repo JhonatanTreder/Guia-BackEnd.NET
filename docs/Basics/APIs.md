@@ -146,7 +146,7 @@ Mas não se engane, os **Headers** e **objetos JSON** são completamente diferen
 
 <br>
 
-3) **Body:** Um **Body** não é nada mais nada menos que um conjunto de informações enviadas com base no tipo de _requisição_ ou _resposta_ gerada por um dos dois lados (**cliente** ou **servidor**). Esse conjunto de informações pode estar em diversos formatos, porém os formatos mais utilizados são **JSON** e **XML** (**E**xtensive **M**arkup **L**anguage). Observe esses dois exemplos de body das mensagens HTTP mostradas lá em cima: <br>
+3) **Body:** Um **Body** não é nada mais nada menos que um conjunto de informações enviadas com base no tipo de _requisição_ ou _resposta_ gerada por um dos dois lados (**cliente** ou **servidor**). Esse conjunto de informações pode estar em diversos formatos, porém os formatos mais utilizados são **JSON** e **XML** (E**x**tensive **M**arkup **L**anguage). Observe esses dois exemplos de body das mensagens HTTP mostradas lá em cima: <br>
 
 Body da _requisição_ <br>
 
