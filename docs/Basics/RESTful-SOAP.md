@@ -61,7 +61,7 @@ Da mesma forma que discutimos anteriormente sobre o formato de uma estrutura de 
 ```
 
 ---
-> **OBS:** Depois de especificar o **conjunto de Headers**, é colocado uma linha em branco para especificar que aquele conjunto headers terminou.
+> **OBS:** Depois de especificar o **conjunto de Headers**, é colocado uma linha em branco para especificar que aquele conjunto de headers terminou.
 Isso também é observado em padrões de respostas como em objetos **JSON**. <br>
 ---
 
