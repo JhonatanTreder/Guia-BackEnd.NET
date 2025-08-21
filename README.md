@@ -24,17 +24,7 @@ Aqui trataremos conceitos de como os protocolos e comunicações se complementam
 - [APIs RESTful vs GraphQL vs gRPC](docs/Protocols/APIs-Patterns.md) <br>
 - [Roteamento e Endpoints](docs/Protocols/Routes-EndPoints.md) <br>
 
-## Parte 3 - Segurança
-Segurança é um tópico fundamental quando pensamos em estruturar um bom **Back-End**. Nesta seção abordaremos assuntos de **criptografia**, **OAuth2**, **JWT** entre outros assuntos de extrema importância para garantir a segurança das nossas aplicações. <br>
-
-- [Conceitos de Criptografia](docs/Security/Cryptography.md) <br>
-- [Autenticação e Autorização](docs/Security/Authentication-Authorization.md) <br>
-- [JWT - Json Web Tokens](docs/Security/JWT.md) <br>
-- [OAuth2 e OpenID Connect](docs/Security/OAuth2-OpenID.md) <br>
-- [APIs Key](docs/Security/APIsKey.md) <br>
-- [Boas Práticas de Segurança em APIs](docs/Security/GoodSecurityPractices.md) <br>
-
-## Parte 4 - Conceitos de Arquitetura
+## Parte 3 - Conceitos de Arquitetura
 Essa parte abordará conceitos gerais sobre arquiteturas, bem como **_Padrões de Projetos_**, **_Injeção de Dependência_**, **_Tipos de Camadas em um Sistema_**, etc. Aqui estamos abordando o assunto de Back-End em um nível mais arquitetural das coisas, isto é, estamos falando sobre como um sistema deve se comportar como um todo por meio de boas práticas que vão desde um tipo de arquitetura até as nuances de sistemas.<br>
 
 - [Padrão MVC - Model View Controller](docs/ArchitectureConcepts/MVC-Architecture.md) <br>
@@ -43,6 +33,16 @@ Essa parte abordará conceitos gerais sobre arquiteturas, bem como **_Padrões d
 - [Injeção de Dependência](docs/ArchitectureConcepts/DependencyInjection.md) <br>
 - [Versionamento de APIs](docs/ArchitectureConcepts/API-Versioning.md) <br>
 - [Padrões de Projetos mais Utilizados no Back-End](docs/ArchitectureConcepts/ProjectPatterns.md) <br>
+
+## Parte 4 - Segurança
+Segurança é um tópico fundamental quando pensamos em estruturar um bom **Back-End**. Nesta seção abordaremos assuntos de **criptografia**, **OAuth2**, **JWT** entre outros assuntos de extrema importância para garantir a segurança das nossas aplicações. <br>
+
+- [Conceitos de Criptografia](docs/Security/Cryptography.md) <br>
+- [Autenticação e Autorização](docs/Security/Authentication-Authorization.md) <br>
+- [JWT - Json Web Tokens](docs/Security/JWT.md) <br>
+- [OAuth2 e OpenID Connect](docs/Security/OAuth2-OpenID.md) <br>
+- [APIs Key](docs/Security/APIsKey.md) <br>
+- [Boas Práticas de Segurança em APIs](docs/Security/GoodSecurityPractices.md) <br>
 
 ## Parte 5 - Fundamentos Específicos do .NET
 Essa parte se diz respeito aos conceitos básicos que integram o .NET como um todo. Aqui estaremos falando mais sobre o nível técnico de como o Back-End se comporta de forma geral atrás dos panos e iremos realizar recomendações de cada conceito observado aqui. <br>
