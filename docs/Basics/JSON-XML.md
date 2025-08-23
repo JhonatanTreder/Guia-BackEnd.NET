@@ -97,9 +97,53 @@ contém uma lista/_array_ de objetos: <br>
 Note que cada definição de objeto começa com '`{`' e termina com '`}`', utilizando a vírgula para separar cada um deles.
 Dentro desses objetos, temos cada conjunto de dados com suas respectivas **chaves** e **valores**. <br>
 
+### Tipos de Dados - JSON
+O **JSON** fornece suporte a alguns tipos de dados, que são eles:
+- **Uma String**: Tipo simples de dado que especifica um conjunto de caracteres em formato de `string`.
+- **Um Número:** Esse tipo de dados fornece suporte a vários outros sub-tipos (`inteiro`, `número quebrado`, `negativo`, etc.).
+- **Um Objeto:** Esse tipo é adicionado quando abrimos outra seção em um arquivo **JSON**. Por exemplo:
+  
+  ---
+  ```json
+    {
+      "pessoa": {
+        "nome": "Mario",
+        "idade": 35,
+        "ativo": true,
+        "contatos": {
+          "email": "mario@email.com",
+          "telefone": "1234-5678"
+        }
+      }
+    }
+  ```
+  ---
+
+- **Um Array:** Esse tipo define uma série de elementos. Por exemplo:
+
+  ---
+  ```json
+    {
+      "marcas": ["Ford", "BMW", "Fiat"]
+    }
+  ```
+  ---
+
+- **Um Booleano:** Esse tipo define apenas dois valores, `true` para verdadeiro e `false` para falso. Por exemplo:
+
+  ---
+  ```json
+    {
+      "ativo": true
+    }
+  ```
+  ---
+
+- **valor Null:** É apenas um valor nulo.
+
 ### Resumindo
-Assim podemos resumir que o uso de '`{ }`' se refere a um único conjunto de dados com **chaves** e **valores**. Por outro lado,
-o uso de '`[ ]`' se refere a uma lista (ou _array_) que pode conter valores simples ou um conjunto de objetos. <br>
+Podemos resumir que o uso de '`{ }`' no **JSON** se refere a um único conjunto de dados com **chaves** e **valores**. Por outro lado,
+o uso de '`[ ]`' se refere a uma lista (ou _array_) que pode conter valores simples ou um conjunto de objetos. Além de que o **JSON** possui alguns **tipos de dados**, que são eles: `string`, `number`, `object`, `array`, `boolean` e `null`. <br>
 
 # Casos de Usos - JSON
 O uso de **JSON** pode ser encontrado  em diversos lugares, bem como: **Configurações de ambientes**, **armazenamento de dados**,
