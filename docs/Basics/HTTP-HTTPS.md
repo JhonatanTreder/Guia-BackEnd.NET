@@ -38,36 +38,37 @@ Portanto, um site que tem um certificado SSL não é necessariamente inseguro, j
 **Fonte Textual:** _https://pingback.com/br/resources/tls-ssl/_ <br>
 
 # Funcionamento da Comunicação na Web
-As _requisições_ e _respostas_ se comportam através dos **métodos HTTP/HTTPS**. Os métodos HTTPs, por sua vez, são aqueles que definem qual é o tipo
+As _requisições_ e _respostas_ se comportam através dos **métodos HTTP/HTTPS**. Os métodos HTTP, por sua vez, são aqueles que definem qual é o tipo
 da _requisição_ para o servidor. Por exemplo: Em uma página de registro, nós podemos enviar uma _requisição_ para o servidor de acordo com o formulário
 de registro que preenchemos (Nome, Email, Senha, etc). Esse formulário seria enviado para o servidor por meio de uma **_requisição POST_** (POST Request em Inglês),
 e o servidor iria devolver para o cliente uma _resposta_. Essa resposta seria tratada primeiramente no **Front-End** de acordo com o **_Status Codes_** recebido da resposta.
-o **Front-End**, por sua vez, poderia permitir o cadastro do usuário, avisar que o Email especificado já está sendo utilizado ou até mesmo redirecionar o usuário para uma outra página.
+O **Front-End**, por sua vez, poderia permitir o cadastro do usuário, avisar que o Email especificado já está sendo utilizado ou até mesmo redirecionar o usuário para uma outra página.
 
 ## "Métodos HTTPs??" "Status Codes??"
 ### Métodos HTTPs
 
-**Explicação:** São aqueles que explicam para o servidor qual é o tipo da _requisição_ que está sendo enviada pelo cliente. Existem vários métodos HTTPs,
+**Explicação:** Os **"métodos HTTP" **São aqueles que explicam para o servidor qual é o tipo da _requisição_ que está sendo enviada pelo cliente. Existem vários métodos HTTP,
 porém os mais utilizados são eles: **`HTTP POST`**, **`HTTP GET`**, **`HTTP PUT`**, **`HTTP PATCH`** e **`HTTP DELETE`** <br>
 
 **Caso de Usos** <br>
 
-**`HTTP POST:`** Utilizado para **criar** algum tipo de recurso em um servidor. Esse método é utilizado bastante em criação de contas (telas de registro),
-quando uma pessoa publica um comentário, quando alguém faz um pedido de algum item e etc. <br>
+**`HTTP POST:`** Utilizado para **criar** algum tipo de recurso no servidor. Esse método é utilizado bastante em criação de contas (telas de registro),
+quando uma pessoa publica um comentário, quando alguém faz um pedido de algum item, etc. <br>
 
-**`HTTP GET:`** Utilizado para **buscar** por algum recurso específico em um servidor. Esse método é amplamente utilizado para buscar detalhes sobre determinado produto,
-buscas por itens em algum catálogo, pesquisar sobre certa coisa, quando um usuário clica no perfil de um outro usuário, etc. <br>
+**`HTTP GET:`** Utilizado para **buscar** por algum recurso específico no servidor. Esse método é amplamente utilizado para buscar detalhes sobre determinado produto,
+buscas por itens em algum catálogo, pesquisar sobre certo produto ou até mesmo quando um usuário clica no perfil de um outro usuário. <br>
 
-**`HTTP PUT:`** Utilizado para **atualizar** alguma coisa no lado do servidor. Esse método é utilizado quando o usuário atualiza informações do seu perfil,
+**`HTTP PUT:`** Utilizado para **atualizar** algum recurso no lado do servidor. Esse método é utilizado quando o usuário atualiza informações do seu perfil,
 atualiza uma mensagem em uma rede social, etc.
 
 **`HTTP PATCH:`** Também é utilizado para **atualizar** algum recurso no servidor, porém ele é utilizado para realizar _atualizações parciais_ de um determinado recurso,
-ou seja, ele é encontrado quando alguém atualiza apenas o nome de usuário e não o perfil todo (foto de perfil, nome de usuário, email, senha, etc.). <br>
+ou seja, ele pode ser encontrado quando alguém atualiza apenas o nome de usuário e não o perfil todo (foto de perfil, nome de usuário, email, senha, etc.). <br>
 
-**`HTTP DELETE:`** Por fim, esse método HTTPs serve para **deletar** determinado recurso no servidor. É bastante utilizado quando o usuário decide excluir uma conta,
+**`HTTP DELETE:`** Por fim, esse método HTTP serve para **deletar** determinado recurso no servidor. É bastante utilizado quando o usuário decide excluir uma conta,
 excluir um comentário, remover a interação sobre uma publicação, etc. <br>
 
-> **ATENÇÃO:** Por mais que os métodos HTTPs começam com _`HTTP`_ e não _`HTTPS`_ isso é apenas uma nomenclatura que serve nos dois tipos de protocolos. <br>
+> **ATENÇÃO:** Por mais que os métodos HTTP começam com _`HTTP`_ e não _`HTTPS`_ esse termo é apenas uma nomenclatura que serve nos dois tipos de protocolos.
+Isso não quer dizer que os **métodos HTTP** não possuem uma camada de segurança, mas sim que é uma nomenclatura utilizada tanto em **HTTP** quanto em **HTTPS**.<br>
 
 ### Status Codes
 
@@ -88,63 +89,63 @@ acordo com a ação do usuário. O servidor pode retornar tipos de **_Status Cod
 **`Família 2xx:`** A família _"200"_ explica que a _requisição_ foi **recebida**, **analisada**, **processada** e **devolvida**
 corretamente para o usuário (passando primeiramente pelo **Front-End**). <br> <br>
 
-**200 OK:** Esse **Status Code** explica que a _requisição_ seguiu o seu fluxo normal e tudo ocorreu conforme o esperado. Geralmente esse **Status Code** possui um _body_, ou seja,
+- **200 OK:** Esse **Status Code** explica que a _requisição_ seguiu o seu fluxo normal e tudo ocorreu conforme o esperado. Geralmente esse **Status Code** possui um _body_, ou seja,
 ele contém um objeto **_JSON_** na _resposta_ do servidor para o **Front-End**
 
-**201 Created:** Esse **Status Code** indica que a requisição resultou na **criação de um recurso** no servidor. Geralmente é retornado após uma requisição **POST** bem-sucedida.  
+- **201 Created:** Esse **Status Code** indica que a requisição resultou na **criação de um recurso** no servidor. Geralmente é retornado após uma requisição **HTTP POST** bem-sucedida.  
 Exemplo: quando um usuário cria uma conta ou quando um produto é cadastrado em um sistema de e-commerce.  
 
-**204 No Content:** Esse **Status Code** informa que a requisição foi processada corretamente, mas o servidor **não possui conteúdo** para retornar.  
-Exemplo: quando um recurso é excluído com sucesso através de um **DELETE**.  
+- **204 No Content:** Esse **Status Code** informa que a requisição foi processada corretamente, mas o servidor **não possui conteúdo** para retornar.  
+Exemplo: quando um recurso é excluído com sucesso através de uma _requisição_ **HTTP DELETE**.  
 
 ---
 
 **`Família 3xx:`** A família _"300"_ representa **redirecionamentos**. Isso significa que o cliente precisa realizar outra ação para obter o recurso desejado.  
 
-**301 Moved Permanently:** O recurso solicitado foi **movido permanentemente** para outra URL. O cliente deve atualizar o link.  
+- **301 Moved Permanently:** O recurso solicitado foi **movido permanentemente** para outra **URL**. O cliente deve atualizar o link.  
 Exemplo: quando um site migra de `http://` para `https://` e precisa redirecionar permanentemente os acessos.  
 
-**302 Found:** Indica que o recurso foi encontrado, mas está **temporariamente em outra URL**.  
+- **302 Found:** Indica que o recurso foi encontrado, mas está **temporariamente em outra URL**.  
 Exemplo: redirecionamentos temporários em campanhas de marketing digital.  
 
-**304 Not Modified:** Esse código é retornado quando o recurso **não foi modificado** desde a última vez que foi requisitado.  
+- **304 Not Modified:** Esse código é retornado quando o recurso **não foi modificado** desde a última vez que foi requisitado.  
 Exemplo: utilizado em **cache** para evitar transferência desnecessária de dados.  
 
 ---
 
 **`Família 4xx:`** A família _"400"_ representa **erros do cliente**, ou seja, o problema ocorreu na requisição enviada.  
 
-**400 Bad Request:** O servidor não conseguiu entender a requisição devido a **sintaxe inválida**.  
-Exemplo: quando o cliente envia um JSON malformado.  
+- **400 Bad Request:** O servidor não conseguiu entender a requisição devido a **sintaxe inválida**.  
+Exemplo: quando o cliente envia um **JSON** malformado.  
 
-**401 Unauthorized:** Indica que a requisição **não foi autenticada**. Geralmente é usado quando o usuário não está logado ou o token JWT é inválido.  
+- **401 Unauthorized:** Indica que a requisição **não foi autenticada**. Geralmente é usado quando o usuário não está logado ou o token **JWT** é inválido.  
 
-**403 Forbidden:** O servidor entendeu a requisição, mas o cliente **não possui permissão** para acessar o recurso.  
+- **403 Forbidden:** O servidor entendeu a requisição, mas o cliente **não possui permissão** para acessar o recurso.  
 Exemplo: tentar acessar uma área administrativa sem ser administrador.  
 
-**404 Not Found:** O servidor não conseguiu encontrar o recurso solicitado.  
-Exemplo: acessar uma URL inexistente como `/api/produtos/999`.  
+- **404 Not Found:** O servidor não conseguiu encontrar o recurso solicitado.  
+Exemplo: acessar uma **URL** inexistente como `https://produtos/999` (imagine que essa essa **URL** não exista).  
 
-**409 Conflict:** Indica que houve um **conflito no processamento** da requisição.  
+- **409 Conflict:** Indica que houve um **conflito no processamento** da requisição.  
 Exemplo: tentar cadastrar um usuário com um e-mail já existente.  
 
-**422 Unprocessable Entity:** O servidor entendeu a requisição, mas os dados fornecidos são **inválidos** ou não podem ser processados.  
+- **422 Unprocessable Entity:** O servidor entendeu a requisição, mas os dados fornecidos são **inválidos** ou não podem ser processados.  
 Exemplo: tentar registrar um usuário sem fornecer todos os campos obrigatórios.  
 
 ---
 
-**`Família 5xx:`** A família _"500"_ representa **erros no servidor**, ou seja, a falha aconteceu do lado do servidor e não do cliente.  
+**`Família 5xx:`** A família _"500"_ representa **erros no servidor**, ou seja, ocorreu uma falha do lado do servidor e não do cliente.  
 
-**500 Internal Server Error:** Um erro genérico que indica que algo deu errado no servidor.  
+- **500 Internal Server Error:** Um erro genérico que indica que algo deu errado no servidor.  
 Exemplo: uma exceção não tratada na aplicação.  
 
-**502 Bad Gateway:** O servidor, atuando como **gateway ou proxy**, recebeu uma resposta inválida de outro servidor.  
+- **502 Bad Gateway:** O servidor, atuando como **gateway ou proxy**, recebeu uma resposta inválida de outro servidor.  
 Exemplo: quando um servidor intermediário não consegue processar corretamente a requisição.  
 
-**503 Service Unavailable:** O servidor está **indisponível temporariamente** para processar a requisição.  
+- **503 Service Unavailable:** O servidor está **indisponível temporariamente** para processar a requisição.  
 Exemplo: durante manutenções ou quando há sobrecarga de tráfego.  
 
-**504 Gateway Timeout:** O servidor, atuando como **gateway ou proxy**, não recebeu resposta a tempo de outro servidor.  
+- **504 Gateway Timeout:** O servidor, atuando como **gateway ou proxy**, não recebeu resposta a tempo de outro servidor.  
 Exemplo: quando o servidor **upstream** demora demais para responder.
 
 ---
@@ -152,7 +153,7 @@ Exemplo: quando o servidor **upstream** demora demais para responder.
 # Resumo dos Status Codes
 - **2xx: Sucesso** (requisição processada corretamente).  
 - **3xx: Redirecionamento** (o cliente precisa tomar outra ação).  
-- **4xx: Erro do cliente** (requisição inválida ou não permitida).  
+- **4xx: Erro do cliente** (requisição inválida ou não autorizada).  
 - **5xx: Erro do servidor** (falha na aplicação ou infraestrutura).  
 
 > Em resumo: os **Status Codes** ajudam o cliente a entender o que aconteceu com sua requisição e como reagir a ela.
@@ -172,8 +173,8 @@ Para que essa comunicação faça sentido, utilizamos os **métodos HTTPs**, que
 Após o servidor processar a requisição, ele responde ao cliente com um **Status Code**,
 que indica o resultado da operação, que no caso esses códigos são divididos em famílias:  
 
-- **2xx: Sucesso** (requisição concluída corretamente).  
-- **3xx: Redirecionamento** (nova ação necessária).  
+- **2xx: Sucesso** (requisição processada corretamente).  
+- **3xx: Redirecionamento** (o cliente precisa tomar outra ação).  
 - **4xx: Erro do cliente** (requisição inválida ou não autorizada).  
 - **5xx: Erro do servidor** (falha na aplicação ou infraestrutura).  
 
@@ -183,11 +184,11 @@ facilitando a interpretação e o tratamento das respostas no lado do cliente.
 
 # Documentações de Referência
 
-| Conceitos              | Links                                                                 |
-|-------------------------|----------------------------------------------------------------------|
-| **HTTP/HTTPS**          | [AWS - Diferença entre HTTP e HTTPS](https://aws.amazon.com/pt/compare/the-difference-between-https-and-http/) |
-| **Requisições e Respostas** | [DevMedia - HTTP: Requisição e Resposta](https://www.devmedia.com.br/http-requisicao-e-resposta/41217) |
-| **TLS/SSL**             | [AWS - Diferença entre SSL e TLS](https://aws.amazon.com/pt/compare/the-difference-between-ssl-and-tls/) |
-| **Métodos HTTPs**       | [MDN - Métodos HTTP](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Reference/Methods) |
-| **JSON**                | [MDN - JSON](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/JSON) |
-| **Status Codes**        | [MDN - Status HTTP](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Reference/Status) |
+| Conceitos                   | Links                                                                                                           |
+|-----------------------------|-----------------------------------------------------------------------------------------------------------------|
+| **HTTP/HTTPS**              | [AWS - Diferença entre HTTP e HTTPS](https://aws.amazon.com/pt/compare/the-difference-between-https-and-http/)  |
+| **Requisições e Respostas** | [DevMedia - HTTP: Requisição e Resposta](https://www.devmedia.com.br/http-requisicao-e-resposta/41217)          |
+| **TLS/SSL**                 | [AWS - Diferença entre SSL e TLS](https://aws.amazon.com/pt/compare/the-difference-between-ssl-and-tls/)        |
+| **Métodos HTTPs**           | [MDN - Métodos HTTP](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Reference/Methods)                       |
+| **JSON**                    | [MDN - JSON](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/JSON)             |
+| **Status Codes**            | [MDN - Status HTTP](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Reference/Status)                         |
