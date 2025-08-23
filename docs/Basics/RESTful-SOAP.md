@@ -5,7 +5,7 @@ por meio de _requisições_ e _respostas_. Abordamos assuntos sobre o fluxo de t
 
 # Introdução
 Sendo direto ao ponto, o **SOAP** (**S**imple **O**bject **A**ccess **P**rotocol) é um **tipo de protocolo** que padroniza **a comunicação** das APIs Web.
-Por outro lado, o **REST** (**Re**presentational **S**tate **T**ransfer) é um estilo arquitetural que define um **padrão para as APIs**, ou seja,
+Por outro lado, o **REST** (**RE**presentational **S**tate **T**ransfer) é um **estilo arquitetural** que define um **padrão para as APIs**, ou seja,
 **APIs RESTful** são aquelas **APIs** que implementam o padrão arquitetural imposto pelo **REST**. Abaixo está uma explicação de como ambos os termos se comportam. <br>
 
 ---
@@ -36,11 +36,11 @@ Abaixo está um exemplo de uma estrutura básica de uma  **_requisição SOAP_**
 ```
 ---
 
-Da mesma forma que discutimos anteriormente sobre o formato de uma estrutura de mensagem **HTTP**, o **padrão SOAP** segue a mesma linha de raciocínio. Observe abaixo: <br>
+Da mesma forma que discutimos anteriormente sobre o formato de uma estrutura de mensagem **HTTP**, o **padrão SOAP** segue uma linha de raciocínio parecida. Observe abaixo: <br>
 
 - **Start Line:** <br>
 ```xml
-<?xml version="1.0"?>
+    <?xml version="1.0"?>
 ```
 
 - **Conjunto de Headers:** <br>
@@ -84,7 +84,7 @@ O **REST** por outro lado, é um padrão arquitetural que define o comportamento
 e toda **API** que segue as regras e especificações do padrão **REST** são chamadas de **APIs RESTful**. Logo abaixo está os seis critérios que o padrão **REST** exige: <br>
 
 - **Arquitetura Cliente-Servidor:** O cliente (**Front-End** consumidor) e o servidor (**Back-End** fornecedor de dados/serviços) devem ser separados.
-O cliente só se preocupa em **consumir** dados e o servidor só se preocupa em **fornecer** dados e gerenciar a lógica de negócio. <br>
+O cliente só se preocupa em **consumir** dados e o servidor só se preocupa em **fornecer** dados e **gerenciar** a lógica de negócio. <br>
 
 - **Sem Estado (Stateless):** Cada _requisição_ do cliente para o servidor deve conter todas as informações necessárias para ser processada e o servidor
 **não** deve armazenar informações de estado do cliente entre as _requisições._ <br>
@@ -92,7 +92,7 @@ O cliente só se preocupa em **consumir** dados e o servidor só se preocupa em 
 - **Cacheabilidade:** Se for possível, dados devem ser armazenados em cache para melhorar o desempenho e evitar buscas extras no servidor. <br>
 
 - **Interface Uniforme:** Essa é uma das regras mais importantes, pois a comunicação deve ser padronizada. Inclui quatro sub-regras:
-  - **Identificação de recursos:** Cada recurso deve ter uma URL única, por exemplo: **/users/123.** 
+  - **Identificação de recursos:** Cada recurso deve ter uma URL única, por exemplo: `/users/123`. 
   - **Manipulação de Recursos Via Representações:** Você interage com recursos através de representações, como **JSON**, **XML**, etc.
   - **Mensagens Autodescritivas:** A requisição deve ter contexto suficiente para poder ser entendida, por exemplo: headers informando formato (**Content-Type: application/json**).
   - **Hypermedia (HATEOAS):** As respostas podem incluir links para indicar ações possíveis, por exemplo: a resposta de um pedido pode incluir um link para cancelar aquele pedido.
@@ -149,19 +149,19 @@ https://seu-site.com/Products/1
 
 ---
 
-- **Comparação Geral**  
-  - **SOAP**: formal, baseado em XML, usa contrato WSDL.  
-  - **REST:** flexível, suporta múltiplos formatos (**JSON**, **XML**, **HTML**), **URLs padronizadas. ** 
-  - Hoje, **REST** é o **padrão dominante** para **Web APIs**.  
+- **Comparação**  
+  - **SOAP**: formal, baseado em **XML**, usa contrato **WSDL**.  
+  - **REST:** flexível, suporta múltiplos formatos (**JSON**, **XML**, **HTML**), **URLs padronizadas.** 
+  - **Mais Utilizado:** O **REST** atualmente é o **padrão dominante** para **Web APIs**.  
 
 
 # Documentações de Referência
 
-| Conceito | Links |
-|----------|-------|
-| REST | [Red Hat - O que é uma API RESTful?](https://www.redhat.com/pt-br/topics/api/what-is-a-rest-api) |
-| SOAP | [IBM - SOAP](https://www.ibm.com/docs/pt-br/rsas/7.5.0?topic=standards-soap) |
-| XML | [AWS - O que é XML?](https://aws.amazon.com/pt/what-is/xml/) |
+| Conceito | Links                                                                                                                                              |
+|----------|----------------------------------------------------------------------------------------------------------------------------------------------------|
+| REST | [Red Hat - O que é uma API RESTful?](https://www.redhat.com/pt-br/topics/api/what-is-a-rest-api)                                                       |
+| SOAP | [IBM - SOAP](https://www.ibm.com/docs/pt-br/rsas/7.5.0?topic=standards-soap)                                                                           |
+| XML | [AWS - O que é XML?](https://aws.amazon.com/pt/what-is/xml/)                                                                                            |
 | Diferença Entre REST e SOAP | [Red Hat - Diferença entre SOAP e REST](https://www.redhat.com/pt-br/topics/integration/whats-the-difference-between-soap-rest) |
 
 
