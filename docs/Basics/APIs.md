@@ -1,5 +1,5 @@
 # Recapitulação Anterior
-Na parte anterior, vimos como o protocolo **HTTP/HTTPS** funciona dentro da **Web**. Também falamos sobre as certificações **_SSL_** e **_TLS_**, que são 
+Na parte anterior, obervamos como o protocolo **HTTP/HTTPS** funciona dentro da **Web**. Também falamos sobre as certificações **_SSL_** e **_TLS_**, que são 
 utilizadas no **HTTP** para oferecer uma camada a mais de _segurança_, dando origem ao **HTTPS**. Além disso, abordamos conceitos como **_JSON_** e, por fim, **_Status Codes_**.
 Agora iremos entrar no tópico de **APIs**, que são nada mais nada menos que a forma como o **Front-End** e o **Back-End** se comunicam entre si.
 
@@ -146,7 +146,7 @@ Mas não se engane, os **Headers** e **objetos JSON** são completamente diferen
 
 <br>
 
-3) **Body:** Um **Body** não é nada mais nada menos que um conjunto de informações enviadas com base no tipo de _requisição_ ou _resposta_ gerada por um dos dois lados (**cliente** ou **servidor**). Esse conjunto de informações pode estar em diversos formatos, porém os formatos mais utilizados são **JSON** e **XML** (E**x**tensive **M**arkup **L**anguage). Observe esses dois exemplos de body das mensagens HTTP mostradas lá em cima: <br>
+3) **Body:** Um **Body** não é nada mais e nada menos que um conjunto de informações enviadas com base no tipo de _requisição_ ou _resposta_ gerada por um dos dois lados (**cliente** ou **servidor**). Esse conjunto de informações pode estar em diversos formatos, porém os formatos mais utilizados são **JSON** e **XML** (E**x**tensive **M**arkup **L**anguage). Observe esses dois exemplos de body das mensagens **HTTP** mostradas lá em cima: <br>
 
 Body da _requisição_ <br>
 
@@ -182,27 +182,27 @@ entre outras (mas o **JSON** é o mais utiliazado atualmente). Um outro ponto qu
 - **API**: Interface que permite comunicação entre sistemas, funcionando como um "garçom" entre **Front-End** e **Back-End**.  
 - **Front-End**: Responsável pela interface e experiência do usuário (lado cliente).  
 - **Back-End**: Responsável pela lógica de negócio e processamento de dados (lado servidor).  
-- **Fluxo de Requisição**: O cliente envia uma _requisição_ HTTP/HTTPS, depois o servidor processa e por fim retorna uma _resposta_ com **Status Code** e **Body**.  
+- **Fluxo de Requisição**: O cliente envia uma _requisição_ HTTP/HTTPS, depois o servidor processa e por fim retorna uma _resposta_ com **Status Code** e **Body** (o body pode não estar incluso em alguns cenários dependendo do método **HTTP** e/ou do **Status Code**).  
 - **Mensagens HTTP** Têm três partes principais:
 1. **Start Line**: Método, endpoint e versão (_requisição_) ou versão e status code (_resposta_).  
 2. **Headers**: Informações adicionais (ex.: `Content-Type`, `Connection`, `Host`).  
-3. **Body**: Conteúdo enviado ou recebido (opcional), geralmente em **JSON**, mas pode ser **XML**, **HTML**, ou outros formatos.
+3. **Body**: Conteúdo enviado ou recebido (opcional), geralmente em **JSON**, mas pode ser **XML**, **HTML**, ou em outros formatos.
  
 - **Body opcional**:
-  - Requisições: GET, DELETE, HEAD → normalmente não têm body.  
-  - Respostas: 204 No Content, 304 Not Modified → não possuem body. <br>
+  - **Requisições:** `GET`, `DELETE`, `HEAD` normalmente não têm body.  
+  - **Respostas:** `204 No Content`, `304 Not Modified` não possuem body. <br>
   
-- **JSON** É o formato mais comum, mas outros tipos podem ser utilizados conforme a necessidade. <br>
+- **JSON** É o formato mais comum, porém outros tipos podem ser utilizados dependendo da escolha da aplicação. <br>
 
 # Documentações de Referência
 
-| Conceitos               | Links                                                                 |
-|-------------------------|----------------------------------------------------------------------|
-| API                     | [AWS - O que é API](https://aws.amazon.com/pt/what-is/api/)          |
-| Front-End e Back-End    | [AWS - Diferença entre Front-End e Back-End](https://aws.amazon.com/pt/compare/the-difference-between-frontend-and-backend/) |
-| Métodos HTTP            | [MDN - Métodos HTTP](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Reference/Methods) |
-| JSON                    | [MDN - JSON](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/JSON) |
-| XML                     | [AWS - O que é XML](https://aws.amazon.com/pt/what-is/xml/)          |
-| HTML                    | [MDN - HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)      |
-| Mensagens HTTP          | [MDN - Mensagens HTTP](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Guides/Messages) |
-| Headers                 | [MDN - Elemento Header](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Reference/Elements/header) |
+| Conceitos               | Links                                                                                                                         |
+|-------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| API                     | [AWS - O que é API](https://aws.amazon.com/pt/what-is/api/)                                                                   |
+| Front-End e Back-End    | [AWS - Diferença entre Front-End e Back-End](https://aws.amazon.com/pt/compare/the-difference-between-frontend-and-backend/)  |
+| Métodos HTTP            | [MDN - Métodos HTTP](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Reference/Methods)                                     |
+| JSON                    | [MDN - JSON](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/JSON)                           |
+| XML                     | [AWS - O que é XML](https://aws.amazon.com/pt/what-is/xml/)                                                                   |
+| HTML                    | [MDN - HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)                                                               |
+| Mensagens HTTP          | [MDN - Mensagens HTTP](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Guides/Messages)                                     |
+| Headers                 | [MDN - Elemento Header](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Reference/Elements/header)                          |
