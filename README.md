@@ -38,7 +38,6 @@ Essa parte abordará conceitos gerais sobre arquiteturas, bem como **_Padrões d
 Segurança é um tópico fundamental quando pensamos em estruturar um bom **Back-End**. Nesta seção abordaremos assuntos de **criptografia**, **OAuth2**, **JWT** entre outros assuntos de extrema importância para garantir a segurança das nossas aplicações. <br>
 
 - [Conceitos de Criptografia](docs/Security/Cryptography.md) <br>
-- [Autenticação e Autorização](docs/Security/Authentication-Authorization.md) <br>
 - [JWT - Json Web Tokens](docs/Security/JWT.md) <br>
 - [OAuth2 e OpenID Connect](docs/Security/OAuth2-OpenID.md) <br>
 - [APIs Key](docs/Security/APIsKey.md) <br>
