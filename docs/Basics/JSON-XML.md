@@ -62,7 +62,7 @@ conjunto de _sub-dados_ com o início e fechar de '`{ }`'. Se a gente quiséssem
 ---
 
 - **Colchetes:** Os colchetes (`[ ]`) no **JSON** são utilizados para definir uma lista (ou _array_) de valores ou de objetos. Isso significa que podemos ter vários itens agrupados dentro de uma mesma chave.
-Observe o exmplo abaixo: <br>
+Observe o exemplo abaixo: <br>
 
 ---
 ```json
