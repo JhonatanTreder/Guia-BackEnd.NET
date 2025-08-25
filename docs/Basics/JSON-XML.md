@@ -139,14 +139,14 @@ O **JSON** fornece suporte a alguns tipos de dados, que são eles:
   ```
   ---
 
-- **valor Null:** É apenas um valor nulo.
+- **Um Null:** É apenas um valor nulo, ou seja, representa a ausência de um valor ou objeto.
 
 ### Resumindo
 Podemos resumir que o uso de '`{ }`' no **JSON** se refere a um único conjunto de dados com **chaves** e **valores**. Por outro lado,
 o uso de '`[ ]`' se refere a uma lista (ou _array_) que pode conter valores simples ou um conjunto de objetos. Além de que o **JSON** possui alguns **tipos de dados**, que são eles: `string`, `number`, `object`, `array`, `boolean` e `null`. <br>
 
 # Casos de Usos - JSON
-O uso de **JSON** pode ser encontrado  em diversos lugares, bem como: **Configurações de ambientes**, **armazenamento de dados**,
+O uso de **JSON** pode ser encontrado em diversos lugares, bem como: **Configurações de ambientes**, **armazenamento de dados**,
 **envio de dados entre sistemas** e até mesmo **exportação e importação de dados**. Vamos analisar alguns desses casos. <br>
 
 ## Configurações de ambientes
