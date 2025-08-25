@@ -10,7 +10,7 @@ possibilitando assim um _envio_ e _recebimento_ de dados mais seguros. <br> <br>
 
 > **OBS:** Irei abordar de uma forma mais aprofundada o conceito de _criptografia_ mais adiante, então não se preocupe muito com esse termo agora.<br>
 
-# O que é o **`TLS`** e o **`SSL`?**
+# O que é o **TLS** e o **SSL?**
 **`Sigla TLS:` TLS** se refere a **T**ransport **L**ayer **S**ecurity (_"Segurança da Camada de Transporte"_ em Português). <br>
 **`Sigla SSL:` SSL** se refere a **S**ecure **S**ocket **L**ayer (_"Camada de Soquete Segura"_ em Português). <br> <br>
 
