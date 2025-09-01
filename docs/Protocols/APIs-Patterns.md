@@ -10,7 +10,7 @@ Neste caso, eu irei estar mostrando as características e casos de uso para cada
 
 # REST - Resumo
 > **ATENÇÃO:** Nesse tópico eu não irei me aprofundar no conceito **REST** porque esse conceito já foi abordado anteriormente, então caso você não entenda como funciona esse padrão arquitetural,
-eu recomendo que você acesse a documentação que fala sobre ele em: [Parte 1 (Conceitos Básicos) Padrão RESTful vs. Padrão SOAP](Basics/RESTful-SOAP.md). <br>
+eu recomendo que você acesse a documentação que fala sobre ele em: [Parte 1 (Conceitos Básicos) Padrão RESTful vs. Padrão SOAP](/docs/Basics/RESTful-SOAP.md). <br>
 
 Como já falamos anteriormente, o **REST** (**RE**presentational **S**tate **T**ransfer) é um estilo arquitetural que define um conjunto de diretrizes que devem ser implantadas nas **APIs Web**.
 Esse conjunto de diretrizes é um padrão arquitetural que se baseia em **recursos** da aplicação, ou seja, entidades que representam objetos ou conceitos do domínio da aplicação
