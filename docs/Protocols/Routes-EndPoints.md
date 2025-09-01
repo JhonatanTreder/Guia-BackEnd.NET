@@ -13,7 +13,7 @@ O termo **URI** (**U**niform **R**esource **I**dentifier ou "Identificador Unifo
 Essa identificação pode ocorrer de duas maneiras, que são elas: <br>
 
 ## URL
-O termo **URL (`U`niform `R`esource `L`ocator)** diz **qual** é o recurso e **como** acessá-lo. Veja esse exemplo abaixo: <br>
+O termo **URL (`U`niform `R`esource `L`ocator)** diz **qual** é o recurso e **como** acessá-lo.
 
 ### Estrutura de Uma URL
 A estrutura geral de uma **URL** é composta por oito partes definidas pelo **RFC 3986**, que são elas: <br>
@@ -27,7 +27,7 @@ A estrutura geral de uma **URL** é composta por oito partes definidas pelo **RF
 - **Fragmento (Opcional):** Indica uma âncora ou seção dentro da página, após o "`#`". Por exemplo: "`#sessao2`", "`#comentarios`".
 
 ## URN
-O termo **URN (`U`niform `R`esource `N`ame)** é um identificador que diz apenas **qual** é o recurso mas não explica **onde** está ou **como** acessá-lo. Veja esse exemplo: <br>
+O termo **URN (`U`niform `R`esource `N`ame)** é um identificador que diz apenas **qual** é o recurso mas não explica **onde** está ou **como** acessá-lo.
 
 ### Estrutura de uma URN
 A estrutura geral de uma **URN** é composta por três partes principais: <br>
