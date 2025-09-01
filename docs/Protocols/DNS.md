@@ -9,7 +9,7 @@ Nessa parte, falaremos sobre **DNS** (**D**omain **N**ame **S**ystem) que é um 
   - **Endereço IP:** É uma sequência numeral única que identifica cada dispositivo conectado a uma rede baseada no **protocolo IP** (**I**nternet **P**rotocol).
   Diferente de um **nome de domínio**, ele é o “endereço” do dispositivo, permitindo que computadores e servidores se encontrem e troquem informações. <br>
 
-    > **OBS:** Endereços IPs podem mudar com o tempo. Ou seja, se um endereço IP mudar, provavelmente ele pode não apondar para o mesmo nome de domínio que antes. <br>
+    > **OBS:** Endereços IPs podem mudar com o tempo. Ou seja, se um endereço IP mudar, provavelmente ele pode não apontar para o mesmo nome de domínio que antes. <br>
 
 
 # Como o DNS Funciona
