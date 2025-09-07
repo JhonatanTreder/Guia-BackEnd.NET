@@ -1,10 +1,12 @@
 # Introdução
+
 esta seção, falaremos sobre o padrão de arquitetura **MVC** "**M**odel, **V**iew and **C**ontroller" (ou **Modelo**, **Visão** e **Controlador** em português). Sendo direto ao ponto,
 o **MVC** é uma **arquitetura de software** amplamente utilizada em sistemas atualmente, principalmente em aplicações web. Antes de iniciar o desenvolvimento de um software ou projeto,
 é de grande importância escolher a arquitetura que será adotada, pois a escolha de uma boa arquitetura oferece diversos benefícios para a aplicação como **escalabilidade**, **manutenibilidade**,
 **organização**, além de que é a melhor opção para aqueles que desejam que outras pessoas contribuam com o projeto de maneira mais eficiente.
 
-## Arquitetura de Software: Contexto e Importância
+## Arquitetura de Software - Contexto e Importância
+
 Como já dito acima, o **MVC** é uma **arquitetura de software**. Mas o que exatamente significa isso?  
 Resumidamente, uma arquitetura de software é um tipo de estrutura (ou um "esqueleto") que define a base de um sistema, definindo seus componentes principais, suas responsabilidades e como eles
 se relacionam entre si e com elementos **externos** (como **bancos de dado**s, **serviços**, **APIs**, entre outros). Pode-se entender que a arquitetura não descreve todos os detalhes de implementação,
@@ -19,14 +21,16 @@ mas estabelece as **diretrizes** de **organização** e os **padrões de intera�
 ## Exemplos de Arquiteturas de Software
 
 ### 1. Arquitetura em Camadas (Layers)
+
 Essa arquitetura organiza a aplicação em camadas distintas, sendo que cada camada possui uma função específica. Ela geralmente é dividida em quatro partes, que são elas: <br>
 
 - **Apresentação (UI):** Interação com o usuário (por exemplo: **HTML**, **CSS**, **JavaScript**, **React**, **Angular**).  
 - **Aplicação (Service Layer):** Contém as regras de negócio da aplicação (não confundir com regras de domínio).  
 - **Domínio (Business Layer):** Define regras, entidades, modelos e validações específicas do problema que o software resolve.
-- **Infraestrutura (Data Access):**Responsável pela comunicação com recursos externos (**bancos de dados**, **APIs**, **serviços de terceiros**, **arquivos**, entre outros).
+- **Infraestrutura (Data Access):** Responsável pela comunicação com recursos externos (**bancos de dados**, **APIs**, **serviços de terceiros**, **arquivos**, entre outros).
 
 ### 2. Arquitetura de Microserviços
+
 Essa arquitetura divide a aplicação em vários serviços que podem ser implementados de maneira independente, além de que a sua comunicação geralmente
 é realizada por meio de **APIs REST**, **serviços de mensageria (como `Kafka`, `RabbitMQ`)** ou **gRPC**. Em uma aplicação de e-commerce, a divisão poderia ser feita desta forma: <br>
 
@@ -52,11 +56,14 @@ Em** dezembro de 1979**, **Reenskaug** formalizou o padrão **MVC** com apenas t
 Desde então, o **MVC** tornou-se um dos padrões mais significantes no desenvolvimento de software.
 
 ### Evolução Inicial do MVC (1978-1988)
+
 <img width="3570" height="2154" alt="MVC-InitalEvolution" src="https://github.com/user-attachments/assets/64ac12ba-f1d5-4609-a508-51a03ef0b789" />
 
 
 ## Componentes do MVC
+
 ---
+
 ### Model
 - Responsável pelos dados e regras de negócio.  
 - Manipula dados.  
@@ -79,11 +86,13 @@ Desde então, o **MVC** tornou-se um dos padrões mais significantes no desenvol
 ## ASP.NET Core MVC
 
 ### O que é o ASP.NET Core MVC?
+
 No ecossistema do **.NET/.NET Core** existe o **ASP.NET Core MVC** que é um **framework** de desenvolvimento web de código aberto,
 multiplataforma e altamente testável, construído sobre o **ASP.NET Core**. Ele segue o padrão arquitetural **Model**-**View**-**Controller** (**MVC**),
 que promove a separação de preocupações (Separation of Concerns), organizando a aplicação em três componentes principais que já conhecemos até agora (**Model**, **View** e **Controller**). <br>
 
 ### Vantagens do Framework
+
 Alguma das vantagens desse framework inclui: <br>
 - Separação de concerns (lógica, interface e controle)  
 - Roteamento inteligente (convencional e por atributos)  
@@ -95,7 +104,8 @@ Alguma das vantagens desse framework inclui: <br>
 ---
 
 ### Estrutura de um Projeto ASP.NET Core MVC
-A estrutura de um
+
+A estrutura inicial de um projeto em **ASP.NET Core MVC** pode ser observada da seguinte forma: <br>
 
 ---
 ```
@@ -112,6 +122,7 @@ A estrutura de um
 ### Exemplo de Código
 
 #### Controller
+
 ```csharp
 public class HomeController : Controller
 {
@@ -129,6 +140,7 @@ public class HomeController : Controller
     }
 }
 ```
+
 #### View (Razor)
 
 ---
@@ -144,7 +156,9 @@ public class HomeController : Controller
 ---
 
 #### Model
+
 ---
+
 ```csharp
    public class User
    {
@@ -167,12 +181,13 @@ public class HomeController : Controller
 | Blazor           | Aplicações interativas com C# no client  | WebAssembly/Server-side        |
 
 
-# Conclusão
+# Resumo
 
 O **ASP.NET Core MVC** é um framework cheio de benefícios para construir aplicações web atualmente, sua ligação ao padrão **MVC** facilita a principalmente a **organização**,
 **manutenção** e **escalabilidade**, dos projetos. Sendo combinado com o ecossistema **.NET**, ele oferece desempenho e produtividade para desenvolvedores.
 
 # Documentações de Referência
+
 | Conceitos                                 | Links                                                                                       |
 |-------------------------------------------|---------------------------------------------------------------------------------------------|
 | Padrão MVC - Microsoft                    | [MVC - Microsoft](https://dotnet.microsoft.com/pt-br/apps/aspnet/mvc)                       |
